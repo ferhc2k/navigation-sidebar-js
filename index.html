@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <i id="action-sidebar" class='sidebar-header-icon ri-menu-line'></i>
+            <p class="sidebar-title">Title</p>
+        </div>
+        <div class="line-indicator"></div>
+        <div class="sidebar-menu">
+            <a href="#" onclick="openMenuItem(this)" class="sidebar-menu-item">
+                <i data-feather="grid" class="sidebar-icon"></i>
+                <span class="sidebar-tooltip">Dashboard</span>
+            </a>
+            <a href="#" onclick="openMenuItem(this)" class="sidebar-menu-item">
+                <i data-feather="shopping-bag" class="sidebar-icon"></i>
+                <span class="sidebar-tooltip">Products</span>
+            </a>
+            <a href="#" onclick="openMenuItem(this)" class="sidebar-menu-item">
+                <i data-feather="mail" class="sidebar-icon"></i>
+                <span class="sidebar-tooltip">Mail</span>
+            </a>
+            <a href="#" onclick="openMenuItem(this)" class="sidebar-menu-item">
+                <i data-feather="map" class="sidebar-icon"></i>
+                <span class="sidebar-tooltip">Map</span>
+            </a>
+            <a href="#" onclick="openMenuItem(this)" class="sidebar-menu-item">
+                <i data-feather="calendar" class="sidebar-icon"></i>
+                <span class="sidebar-tooltip">Calendar</span>
+            </a>
+            <a href="#" onclick="openMenuItem(this)" class="sidebar-menu-item">
+                <i data-feather="users" class="sidebar-icon"></i>
+                <span class="sidebar-tooltip">Contacts</span>
+            </a>
+            <a href="#" onclick="openMenuItem(this)" class="sidebar-menu-item">
+                <i data-feather="bell" class="sidebar-icon"></i>
+                <span class="sidebar-tooltip">Notifications</span>
+            </a>
+            <a href="#" onclick="openMenuItem(this)" class="sidebar-menu-item">
+                <i data-feather="message-square" class="sidebar-icon"></i>
+                <span class="sidebar-tooltip">Chats</span>
+            </a>
+            <a href="#" onclick="openMenuItem(this)" class="sidebar-menu-item">
+                <i data-feather="settings" class="sidebar-icon"></i>
+                <span class="sidebar-tooltip">Settings</span>
+            </a>
+        </div>
+        <a href="#" id="change-theme"  class="sidebar-menu-item">
+            <i style="font-size: 1.65rem;" class="ri-moon-line sidebar-icon"></i>
+            <span class="sidebar-tooltip">Dark Mode</span>
+        </a>
+    </nav>
+    <h1>Components</h1>
+    <script>
+        feather.replace()
+    </script>
+    
+</body>
+<script src="./js/main.js"></script>
+</html>
